@@ -66,7 +66,7 @@ function runCdk(){
 	exitCode=${?}
 	echo ::set-output name=status_code::${exitCode}
 	echo "***************************"
-	ls
+	printenv
 	echo "${output}"
 
 	commentStatus="Failed"
