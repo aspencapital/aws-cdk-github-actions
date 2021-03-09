@@ -4,5 +4,5 @@ RUN apk --update --no-cache add nodejs nodejs-npm python3 py3-pip jq curl bash g
 	ln -sf /usr/bin/python3 /usr/bin/python
 
 COPY entrypoint.sh /entrypoint.sh
-
+CMD ls -la
 ENTRYPOINT ["/entrypoint.sh"]
